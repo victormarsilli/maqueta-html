@@ -1,0 +1,35 @@
+.logo{
+    background-color: rgb(52, 243, 195);
+    width: 50%;
+}
+
+.g-col-2{
+    background-color: rgb(52, 243, 195);
+    width: 50%;
+}
+
+.fa-facebook{
+    position: absolute;
+    right: 40%;
+    top: 2%;
+    font-size: 3rem;
+}
+
+.fa-square-instagram{
+    position: absolute;
+    right: 30%;
+    top: 2%;
+    font-size: 3rem;
+}
+
+.fa-linkedin{
+    position: absolute;
+    right: 20%;
+    top: 2%;
+    font-size: 3rem;
+}
+
+.container{
+    width: 50%;
+    background-color: aqua;
+}
