@@ -1,92 +1,107 @@
 <!DOCTYPE html>
 <html lang="es">
 
-  <!-- head -->
+<!-- head -->
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Porfolio</title>
+  <!-- bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
   <link rel="stylesheet" href="https://kit.fontawesome.com/dff24539bc.css" crossorigin="anonymous">
+  <!-- css -->
   <link rel="stylesheet" href="css/style.css">
 </head>
-  <!-- body -->
+<!-- body -->
+
 <body>
-  <!-- logo cabecera -->
+  <!-- header -->
+  <header>
+    <nav class="navbar navbar-expand-lg bg-navbar text-light">
+      <div class="container-fluid">
 
-   <header class header>
-    <div class="logo">
-      <img src="img/logo.png" alt="logo Argentina Programa">
-    </div> 
-
-    <!-- iconos redes -->
-        <div class="icono">
-        <li><a href="http://" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook"></i></a></li>
-        <li><a href="http://" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-square-instagram"></i></a></li>
-        <li><a href="http://" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i></a></li>
+        <!-- logo argentina programa -->
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img src="img/logo.png" alt="logo de argentona programa">
+          </a>
         </div>
 
-    <!-- foto usuario -->
-    <div class="foto-user">
-      <img src="img/user.png" class="user" alt="foto">
-    </div>
-
-    <!-- header -->
+        <!-- lista redes -->
+        <div class="collapse navbar-collapse" id="navbarSupporteContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fa-brands fa-facebook"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fa-brands fa-instagram"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fa-brands fa-linkedin"></i></a>
+            </li>
+        </div>
+      </div>
+    </nav>
   </header>
-     <!-- navegacion lateral -->
-<nav class="nav">
-   <ul class="nav flex-column">
-    <li class="nav-item">
-      <a class="nav-link inicio" aria-current="page" href="#">Inicio</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link acerca" href="#acerca">Acerca de mi</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link conocimientos" href="#conocimientos">Conocimientos</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link contacto" href="#contacto">Contacto</a>
-    </li>
+
+  <!-- barra nav -->
+  <nav class="nav-lateral">
+    <ul class="nav nav-pills">
+      <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="#">Active</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled">Disabled</a>
+      </li>
     </ul>
-</nav>
-      <!-- secciones -->
-  <section class="section">
-    <article id="acerca">
-      <h2>Acerca de mi</h2>
-      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore deserunt ipsam odit tempore distinctio adipisci ad est repudiandae molestiae in assumenda itaque, vitae quibusdam officiis cum nisi tenetur, numquam nesciunt.</p>
-    </article>
-    <article id="conocimientos">
-      <h2>Conocimientos</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit veritatis ratione quas rerum animi maiores dolorum nesciunt est. Quas voluptatibus natus mollitia quibusdam illo sed exercitationem ipsa saepe placeat consequuntur!</p>
-     </article>
-    <article id="contacto"><h4>Contactame</h4>
-      <h5>Enviame un mensaje aqui</h5>
-      <!-- formulario -->
-      <div class="mb-3">
-        <label for="exampleFormControlInput1" class="form-label">Ingresa tu email</label>
-        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="direcc@correo.com">
-      </div>
-      <div class="mb-3">
-        <label for="exampleFormControlTextarea1" class="form-label">Escribe tu mensaje</label>
-        <textarea class="form-control" id="exampleFormControlTextarea1"placeholder="Escribe tu mensaje" rows="3"></textarea>
-      </div>
-      <div class="col-auto">
-        <button type="submit" class="btn btn-primary mb-3">Enviar</button>
-      </div>
-    </article>
-  </section>
-      <!-- pie de pagina -->
-  <footer>&copy;Victor-Marsilli-2023</footer>
+  </nav>
+
+  <!-- articulo acerca de mi -->
+  <article>
+    <div id="carrouselExampleIndicators" class="carousel slide">
+      <div class="carousel-inner">
+        <div class="carrousel-item active" style="position: relative; left: 0; top: 0;">
+          <!-- imagen fondo -->
+          <img src="img/Desarrollo-Web-Dibdata.jpg" class="d-block w100" alt="foto info">
+          <!-- imagen usuario -->
+          <div class="card" style="width: 25rem;">
+            <img src="./img/usuario.jpg" class="card-img-top" alt="Foto usuario">
+              <p class="card-text">
+                <h2>Acerca de Mi</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque itaque voluptates esse eligendi,
+                accusantium velit voluptatibus, libero vitae reiciendis dolor quos fugit? Quia, dolorem harum iste odit
+                numquam officiis commodi.</p>
+            </div>
+          </div>        
+          </div>
+        </div>
+
+        <!-- articulo experiencia laboral -->
+
+        <section class="experiencia">
+
+        </section>
+        
 
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-      crossorigin="anonymous"></script>
-    <script src="https://kit.fontawesome.com/dff24539bc.js" crossorigin="anonymous"></script>
+
+
+  </article>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/dff24539bc.js" crossorigin="anonymous"></script>
 </body>
 
 </html>

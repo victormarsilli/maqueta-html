@@ -1,88 +1,52 @@
-*{
-    margin: 0;
-    padding: 0;
-    background-color: rgb(52, 243, 195);
-}
-
-.logo{
-    width: 50%;
-    border: 1px solid white;
-    
+.container{
+    background-color: black;
+    margin: -1%;
+    width: 60%;
 }
 
 
-li{
-    list-style: none;
-}
 
-
-.fa-facebook{
-    right: 40%;
-    top: 2%;
-    font-size: 3rem;
-    position: absolute;
-    color: white;
-}
-
-
-.fa-square-instagram{
-    right: 30%;
-    top: 2%;
-    font-size: 3rem;
-    position: absolute;
-    color: white   
-}
-
-.fa-linkedin{
-    right: 20%;
-    top: 2%;
-    font-size: 3rem;
-    position: absolute;
-    color: white;
-}
-
-.foto-user{
-    position: relative;
-}
-
-.user{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-}
-
-.nav{
+.nav-lateral li{
+    z-index: 98;
+    contain: size;
     width: 10%;
-    height: 5%;
-    border: 1px solid white;    
+    height: 15%;
+    background-color: aqua;
+
 }
 
-.nav-item{
-    border: 4px solid white;
-    margin: 10%;
-    padding-block: 10%;
+.d-block w100{
+  position:absolute;
+  height:100%;
+  width:50%px;
+  z-index: 90;
+  border: transparent;
 }
 
+.card{
+    position:absolute;
+    height:100%;
+    width:50%;
+    top: 40px;
+    left : 40px;
+    z-index: 95;
+    border: transparent;
+    background-color: transparent;
+  }
 
-.section{
-    width: 100%;
-    height: 50%;
-    border: 1px solid white;
-}
+  .card-img-top{
+    border-radius: 100%;
+    display: flex;
+    width: 15rem;
+    height: 15rem;
+  }
 
-#acerca, #conocimientos, #contacto{
-    border: 2px solid white;
-    margin: 2px;
-    padding: 2px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-style: italic;
+  .card p, h2{
     color: white;
-}
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
 
-.mb-3{
-    width: 30%;
-    padding: 1%;
-}
+
+
+
+
