@@ -28,34 +28,33 @@ header{
   position: relative;
   color: white;
   font-size: 3rem;
-  bottom: 2rem;
+  bottom: 6rem;
 }
 
 .facebook{
   left: 1rem
 }
 .instagram{  
-  left: 3rem;
-}
-
-.linkedin{  
   left: 5rem;
 }
 
+.linkedin{  
+  left: 9rem;
+}
+
 .login{ 
-  left: 15rem;
+  left: 19rem;
   font-size: 2rem;
 }
 
 
-.nav-lateral li{
-    position: relative;
+.nav-link{
+    position: fixed;
+    color: red;
+    top: 6rem;
     z-index: 110;
-    contain: size;
-    width: 10%;
-    height: 15%;
-    background-color: aqua;
-
+    height: 5rem;
+    background-color: white;
 }
 
 .d-block w100{
