@@ -1,18 +1,12 @@
-.container{
-    margin: 2%;
-    width: 60%;
-    height: 13%;
-    bottom: 3rem;
-}
+/* barra logo */
 
-.navbar-brand img{
-  position: relative;
-  bottom: 2rem;
+html,body{
+  overflow-x: hidden;
 }
 
 header{
   position: fixed;
-  background-color: black;
+  background-color: rgb(5, 5, 5);
   width: 100%;
   height: 13%;
   z-index: 100;
@@ -23,55 +17,99 @@ header{
   font-size: 3rem;
   font-style: white;
 }
-
-.facebook, .instagram, .linkedin, .login{
+/* barra iconos */
+.arg, .facebook, .instagram, .linkedin, .login{
   position: relative;
   color: white;
   font-size: 3rem;
-  bottom: 6rem;
+  bottom: 1rem;
+}
+
+.arg{
+  padding-bottom: 0;
 }
 
 .facebook{
-  left: 1rem
+  left: 20rem;
 }
 .instagram{  
-  left: 5rem;
+  left: 30rem;
+  bottom: 6.5rem;
 }
 
 .linkedin{  
-  left: 9rem;
+  left: 40rem;
+  bottom: 12rem;
 }
 
 .login{ 
-  left: 19rem;
+  left: 55rem;
   font-size: 2rem;
+  bottom: 17.5rem;
 }
 
-
-.nav-link{
-    position: fixed;
-    color: red;
-    top: 6rem;
-    z-index: 110;
-    height: 5rem;
-    background-color: white;
+/* navegacion lateral */
+.nav-lateral{
+  position: sticky;
+  list-style: none;
+  z-index: 110;
+  top: 7rem;
+}
+.nav-lateral a{
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;  
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+.acer{
+  padding: 1rem;
+  border: solid 1px white;
+  border-radius: 20%;
+  width: 6rem;
+  background-color: rgb(5, 5, 5);
+}
+.con{
+  padding: 1rem;
+  border: solid 1px white;
+  border-radius: 20%;
+  width: 8rem;
+  background-color: rgb(5, 5, 5);
+}
+.apre{
+  padding: 1rem;
+  border: solid 1px white;
+  border-radius: 20%;
+  width: 10rem;
+  background-color: rgb(5, 5, 5);
+}
+.exp{
+  padding: 1rem;
+  border: solid 1px white;
+  border-radius: 20%;
+  width: 13rem;
+  background-color: rgb(5, 5, 5);
+}
+
+/* fondo */
+
+.div-fondo{
+  bottom: 16rem;
+}
 .d-block w100{
-  position:relative;
   height:100%;
-  width:50%px;
+  width: 40%;
   z-index: 90;
-  border: transparent;
 }
 
+/* foto usuario */
 .card{
     position:absolute;
     height:100%;
     width:40%;
-    top: 40px;
+    top: 1rem;
     margin: 80px;
-    left : 40px;
+    left : 30rem;
     z-index: 95;
     border: transparent;
     background-color: transparent;
@@ -87,13 +125,29 @@ header{
     width: 15rem;
     height: 15rem;
   }
-
+/* acerca de mi */
   .card p, h2{
     color: white;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
 
+  /* experiencia laboral */
 
-
-
-
+  .container {
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    top: 80rem;
+    right: 15rem;
+  }
+  .laboral{
+    position: relative;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(151, 217, 226);
+    bottom: 87rem;
+    left: 25rem;
+    height: 40rem;
+    width: 40rem;
+    
+  }
+  
