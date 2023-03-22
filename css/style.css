@@ -1,8 +1,13 @@
 /* barra logo */
-
-html,body{
+html{
   overflow-x: hidden;
 }
+
+
+body{
+  background-color: #049dff;
+}
+
 
 header{
   position: fixed;
@@ -50,7 +55,7 @@ header{
 
 /* navegacion lateral */
 .nav-lateral{
-  position: sticky;
+  position: fixed;
   list-style: none;
   z-index: 110;
   top: 7rem;
@@ -94,7 +99,11 @@ header{
 /* fondo */
 
 .div-fondo{
-  bottom: 16rem;
+  /* bottom: 16rem; */
+  width: 80%;
+  height: 40rem;
+  left: 20%;
+  
 }
 .d-block w100{
   height:100%;
@@ -109,7 +118,6 @@ header{
     width:40%;
     top: 4rem;
     margin: 80px;
-    left : 30rem;
     z-index: 95;
     border: transparent;
     background-color: transparent;
@@ -132,33 +140,26 @@ header{
   }
 
   /* experiencia laboral */
-
-  .container {
+  .experiencia h2{
     position: absolute;
-    width: 100%;
-    height: 50%;
-    top: 80rem;
-    right: 15rem;
+    color: white;
+    display: flex;
+    margin-bottom: 4rem;
+    right: 25rem;
+    top: 55rem;
+    z-index: 150;
   }
-  .laboral{
+  .experiencia p{
     position: relative;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: rgb(255, 255, 255);
-    bottom: 87rem;
-    left: 35rem;
-    height: 40rem;
-    width: 40rem;
-    
-  }
-
-  .container h3{
-    position: absolute;
-    color: antiquewhite;
-    left: 4rem;
+    color: white;
+    width: 20rem;
+    height: 20rem;
+    display: inline-block;
+    top: 20rem;
+    left: 20rem;
   }
 
   /* barra de progreso */
-
 
   .mt-100{
     margin-top: 200px;
@@ -288,3 +289,94 @@ header{
   }
 
   
+  .aprendizaje{
+    position: absolute;
+    left: 20rem;
+    top: 100rem;
+  }
+  .aprendizaje h3{
+    font-size: 3rem;
+    position: inherit;
+    color: rgb(255, 255, 255);
+    left: 19rem;
+    bottom: 65rem;
+  }
+
+  /* logos de progreso */
+
+  .html5{
+    position: relative;
+    font-size: 5rem;
+    color: white;
+    right: 32rem;
+    bottom: 15rem;
+  }
+
+  .css3{
+    position: relative;
+    font-size: 5rem;
+    color: white;
+    right: 20rem;
+    bottom: 22.5rem;
+  }
+
+  .js{
+    position: relative;
+    font-size: 5rem;
+    color: white;
+    right: 8rem;
+    bottom: 30rem;
+  }
+
+  .bootstrap{
+    position: relative;
+    font-size: 5rem;
+    color: white;
+    right: 33rem;
+    bottom: 17rem;
+  }
+
+  .database{
+    position: relative;
+    font-size: 5rem;
+    color: white;
+    left: 15rem;
+    bottom: 25rem;
+  }
+
+  .java{
+    position: relative;
+    font-size: 5rem;
+    color: white;
+    bottom: 33rem;
+    left: 27rem;
+  }
+
+  /* contacto */
+
+  .contacto{
+    position: absolute;
+    left: 25rem;
+    z-index: 200;
+    top: 10rem;
+    left: 30rem;
+    width: 30rem;
+  }
+
+  .form-label{
+    color: white;
+    font-size: 2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+  .form-control{
+    color: #ffffff;
+    background-color: #000;
+    transition: 0.5s;
+  }
+
+  
+.form-control:hover{
+  background-color: black;
+  color: #ffffff;
+}
