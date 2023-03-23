@@ -14,7 +14,7 @@ header{
   background-color: rgb(5, 5, 5);
   width: 100%;
   height: 13%;
-  z-index: 100;
+  z-index: 300;
 }
 
 #navbarSupporteContent{
@@ -24,10 +24,13 @@ header{
 }
 /* barra iconos */
 .arg, .facebook, .instagram, .linkedin, .login{
+  height: 1rem;
+  width: 2rem;
   position: relative;
   color: white;
   font-size: 3rem;
   bottom: 1rem;
+  transition: 0.5s;
 }
 
 .arg{
@@ -35,20 +38,20 @@ header{
 }
 
 .facebook{
-  left: 20rem;
+  left: 40rem;
 }
 .instagram{  
-  left: 30rem;
+  left: 50rem;
   bottom: 6.5rem;
 }
 
 .linkedin{  
-  left: 40rem;
+  left: 60rem;
   bottom: 12rem;
 }
 
 .login{ 
-  left: 55rem;
+  left: 75rem;
   font-size: 2rem;
   bottom: 17.5rem;
 }
@@ -57,8 +60,9 @@ header{
 .nav-lateral{
   position: fixed;
   list-style: none;
-  z-index: 110;
+  z-index: 310;
   top: 7rem;
+  transition: 0.5s;
 }
 .nav-lateral a{
   color: white;
@@ -238,13 +242,13 @@ header{
     left: 5%;
   }
   .progress.blue .progress-bar {
-    border-color: #049dff;
+    border-color: #4503fd;
   }
   .progress.blue .progress-left .progress-bar {
     animation: loading-2 1.5s linear forwards 1.8s;
   }
   .progress.yellow .progress-bar {
-    border-color: #fdba04;
+    border-color: #4503fd;
   }
   .progress.yellow .progress-right .progress-bar {
     animation: loading-3 1.8s linear forwards;
@@ -258,7 +262,7 @@ header{
       transform: rotate(0deg);
     }
     100% {
-      -webkit-transform: rotate(180deg);
+      -webkit-transform: rotate(10deg);
       transform: rotate(180deg);
     }
   }
@@ -379,4 +383,38 @@ header{
 .form-control:hover{
   background-color: black;
   color: #ffffff;
+}
+
+.nav-lateral :hover{
+  background-color: #049dff;
+  color: white;  
+}
+.nav-lateral a:hover{
+  transition: 0,5s;
+  
+}
+
+/* hover */
+
+.facebook:hover{
+  color: #049dff;
+  font-size: 3.5rem;
+}
+.instagram:hover{
+  color: #049dff;
+  font-size: 3.5rem;
+}
+.linkedin:hover{
+  color: #049dff;
+  font-size: 3.5rem;
+}
+.login:hover{
+  color: #049dff;
+  font-size: 3.5rem;
+}
+
+.footer{
+  background-color: #000;
+  color: #ffffff;
+  
 }
