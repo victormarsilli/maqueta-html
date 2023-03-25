@@ -1,11 +1,16 @@
 /* barra logo */
+
+*{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
 html{
   overflow-x: hidden;
 }
 
 
 body{
-  background-color: #049dff;
+  background-color: #0d6efd;
 }
 
 
@@ -21,6 +26,7 @@ header{
   left: 55rem;
   font-size: 3rem;
   font-style: white;
+  width: 0
 }
 /* barra iconos */
 .arg, .facebook, .instagram, .linkedin, .login{
@@ -103,14 +109,10 @@ header{
 /* fondo */
 
 .div-fondo{
-  /* bottom: 16rem; */
-  width: 80%;
   height: 40rem;
-  left: 20%;
-  
+  left: 20%; 
 }
 .d-block w100{
-  height:100%;
   width: 40%;
   z-index: 90;
 }
@@ -118,7 +120,6 @@ header{
 /* foto usuario */
 .card{
     position:absolute;
-    height:100%;
     width:40%;
     top: 4rem;
     margin: 80px;
@@ -138,12 +139,22 @@ header{
     height: 15rem;
   }
 /* acerca de mi */
-  .card p, h2{
+  .card p, h1, h2{
     color: white;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
 
+  .card h1{
+    position: relative;
+    left: 20rem;
+    bottom: 18rem;
+    font-size: 3rem;
+    font-style: oblique;
+  }
+
   /* experiencia laboral */
+
+
   .experiencia h2{
     position: absolute;
     color: white;
@@ -153,14 +164,31 @@ header{
     top: 55rem;
     z-index: 150;
   }
+
   .experiencia p{
-    position: relative;
+    position: absolute;
     color: white;
+    border: solid 1px;
     width: 20rem;
     height: 20rem;
-    display: inline-block;
+  }
+
+  .primero{
+    position: relative;
+    left: 18rem;
     top: 20rem;
-    left: 20rem;
+  }
+
+  .segundo{
+    position: relative;
+    left: 41rem;
+    top: 17.6rem;
+  }
+
+  .tercero{
+    position: relative;
+    left: 64rem;
+    top: 15.3rem;
   }
 
   /* barra de progreso */
@@ -266,7 +294,8 @@ header{
     background-color: #000;
     transition: 0.5s;
   }
-
+  
+  /* hover */
   
 .form-control:hover{
   background-color: black;
@@ -274,7 +303,7 @@ header{
 }
 
 .nav-lateral :hover{
-  background-color: #049dff;
+  background-color: #0d6efd;
   color: white;  
 }
 .nav-lateral a:hover{
@@ -282,27 +311,38 @@ header{
   
 }
 
-/* hover */
+.form-control{
+  position: absolute;
+  width: 21rem;
+  top: 7rem;
+  background-color: #0d6efd;
+}
+
 
 .facebook:hover{
-  color: #049dff;
-  font-size: 3.5rem;
+  color: #0d6efd;
 }
 .instagram:hover{
-  color: #049dff;
-  font-size: 3.5rem;
+  color: #0d6efd;
 }
 .linkedin:hover{
-  color: #049dff;
-  font-size: 3.5rem;
+  color: #0d6efd;
 }
 .login:hover{
-  color: #049dff;
-  font-size: 3.5rem;
+  color: #0d6efd;
 }
 
 .footer{
   background-color: #000;
   color: #ffffff;
   position: relative;
+}
+
+/* boton de modal */
+
+.btn{
+  color: #ffffff;
+  background-color: #000;
+  border: #ffffff;
+  z-index: 900;
 }
