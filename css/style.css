@@ -8,58 +8,60 @@ html{
   overflow-x: hidden;
 }
 
-
 body{
   background-color: #0d6efd;
 }
 
-
-header{
+.container-fluid{
   position: fixed;
   background-color: rgb(5, 5, 5);
   width: 100%;
-  height: 13%;
-  z-index: 300;
+  height: 23%;
+  z-index: 900;
+  flex: none;
 }
 
 #navbarSupporteContent{
   left: 55rem;
   font-size: 3rem;
   font-style: white;
-  width: 0
+
 }
+
 /* barra iconos */
 .arg, .facebook, .instagram, .linkedin, .login{
   height: 1rem;
   width: 2rem;
-  position: relative;
+  position: absolute;
   color: white;
   font-size: 3rem;
   bottom: 1rem;
   transition: 0.5s;
+  z-index: 999;
 }
 
 .arg{
-  padding-bottom: 0;
+  bottom: 4.5rem;
 }
 
 .facebook{
+  bottom: 3rem;
   left: 40rem;
 }
 .instagram{  
+  bottom: 3rem;
   left: 50rem;
-  bottom: 6.5rem;
 }
 
 .linkedin{  
+  bottom: 3rem;
   left: 60rem;
-  bottom: 12rem;
 }
 
 .login{ 
+  bottom: 2.5rem;
   left: 75rem;
   font-size: 2rem;
-  bottom: 17.5rem;
 }
 
 /* navegacion lateral */
@@ -123,7 +125,6 @@ header{
     width:40%;
     top: 4rem;
     margin: 80px;
-    z-index: 95;
     border: transparent;
     background-color: transparent;
   }
@@ -134,14 +135,12 @@ header{
 
   .card-img-top{
     border-radius: 100%;
-    display: flex;
     width: 15rem;
     height: 15rem;
   }
 /* acerca de mi */
   .card p, h1, h2{
     color: white;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
 
   .card h1{
@@ -162,7 +161,6 @@ header{
     margin-bottom: 4rem;
     right: 25rem;
     top: 55rem;
-    z-index: 150;
   }
 
   .experiencia p{
@@ -176,19 +174,19 @@ header{
   .primero{
     position: relative;
     left: 18rem;
-    top: 20rem;
+    top: 19rem;
   }
 
   .segundo{
     position: relative;
     left: 41rem;
-    top: 17.6rem;
+    top: 16.6rem;
   }
 
   .tercero{
     position: relative;
     left: 64rem;
-    top: 15.3rem;
+    top: 14.4rem;
   }
 
   /* barra de progreso */
@@ -211,7 +209,8 @@ header{
   .aprendizaje{
     position: absolute;
     left: 20rem;
-    top: 100rem;    
+    top: 100rem;  
+    z-index: 390;  
   }
   
   .aprendizaje h3{
@@ -277,7 +276,6 @@ header{
   .contacto{
     position: absolute;
     left: 25rem;
-    z-index: 200;
     top: 10rem;
     left: 30rem;
     width: 30rem;
@@ -286,7 +284,6 @@ header{
   .form-label{
     color: white;
     font-size: 2rem;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
 
   .form-control{
@@ -340,9 +337,43 @@ header{
 
 /* boton de modal */
 
+.experiencia button{
+  position: relative;
+  left: 60rem;
+  top: 15rem;
+}
+
+.collapse button{
+  position: relative;
+  top: 9rem;
+  right: 7rem;
+}
+
+
 .btn{
   color: #ffffff;
   background-color: #000;
   border: #ffffff;
-  z-index: 900;
+}
+
+.primero button{
+  position: relative; 
+  left: 10rem;
+  top: 22rem;
+}
+.segundo button{
+  position: relative; 
+  left: 10rem;
+  top: 22rem;
+}
+.tercero button{
+  position: relative; 
+  left: 10rem;
+  top: 22rem;
+}
+
+.progress-bar button{
+  position: absolute;
+  right: 0;
+  z-index: 250;
 }
