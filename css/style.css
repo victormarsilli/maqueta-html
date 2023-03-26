@@ -1,18 +1,18 @@
 /* barra logo */
 
-*{
+* {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-html{
+html {
   overflow-x: hidden;
 }
 
-body{
+body {
   background-color: #0d6efd;
 }
 
-.container-fluid{
+.container-fluid {
   position: fixed;
   background-color: rgb(5, 5, 5);
   width: 100%;
@@ -21,15 +21,18 @@ body{
   flex: none;
 }
 
-#navbarSupporteContent{
+#navbarSupporteContent {
   left: 55rem;
   font-size: 3rem;
   font-style: white;
-
 }
 
 /* barra iconos */
-.arg, .facebook, .instagram, .linkedin, .login{
+.arg,
+.facebook,
+.instagram,
+.linkedin,
+.login {
   height: 1rem;
   width: 2rem;
   position: absolute;
@@ -40,67 +43,67 @@ body{
   z-index: 999;
 }
 
-.arg{
+.arg {
   bottom: 4.5rem;
 }
 
-.facebook{
+.facebook {
   bottom: 3rem;
   left: 40rem;
 }
-.instagram{  
+.instagram {
   bottom: 3rem;
   left: 50rem;
 }
 
-.linkedin{  
+.linkedin {
   bottom: 3rem;
   left: 60rem;
 }
 
-.login{ 
+.login {
   bottom: 2.5rem;
   left: 75rem;
   font-size: 2rem;
 }
 
 /* navegacion lateral */
-.nav-lateral{
+.nav-lateral {
   position: fixed;
   list-style: none;
   z-index: 310;
   top: 7rem;
   transition: 0.5s;
 }
-.nav-lateral a{
+.nav-lateral a {
   color: white;
   text-decoration: none;
-  font-size: 1rem;  
+  font-size: 1rem;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.acer{
+.acer {
   padding: 1rem;
   border: solid 1px white;
   border-radius: 20%;
   width: 6rem;
   background-color: rgb(5, 5, 5);
 }
-.con{
+.con {
   padding: 1rem;
   border: solid 1px white;
   border-radius: 20%;
   width: 8rem;
   background-color: rgb(5, 5, 5);
 }
-.apre{
+.apre {
   padding: 1rem;
   border: solid 1px white;
   border-radius: 20%;
   width: 10rem;
   background-color: rgb(5, 5, 5);
 }
-.exp{
+.exp {
   padding: 1rem;
   border: solid 1px white;
   border-radius: 20%;
@@ -110,89 +113,91 @@ body{
 
 /* fondo */
 
-.div-fondo{
+.div-fondo {
   height: 40rem;
-  left: 20%; 
+  left: 20%;
 }
-.d-block w100{
+.d-block w100 {
   width: 40%;
   z-index: 90;
 }
 
 /* foto usuario */
-.card{
-    position:absolute;
-    width:40%;
-    top: 4rem;
-    margin: 80px;
-    border: transparent;
-    background-color: transparent;
-  }
+.card {
+  position: absolute;
+  width: 40%;
+  top: 4rem;
+  margin: 80px;
+  border: transparent;
+  background-color: transparent;
+}
 
-  .carrousel-item active{
-    position: relative;
-  }
+.carrousel-item active {
+  position: relative;
+}
 
-  .card-img-top{
-    border-radius: 100%;
-    width: 15rem;
-    height: 15rem;
-  }
+.card-img-top {
+  border-radius: 100%;
+  width: 15rem;
+  height: 15rem;
+}
+
 /* acerca de mi */
-  .card p, h1, h2{
-    color: white;
-  }
 
-  .card h1{
-    position: relative;
-    left: 20rem;
-    bottom: 18rem;
-    font-size: 3rem;
-    font-style: oblique;
-  }
+.card p,
+h1,
+h2 {
+  color: white;
+}
 
-  /* experiencia laboral */
+.card h1 {
+  position: relative;
+  left: 20rem;
+  bottom: 18rem;
+  font-size: 3rem;
+  font-style: oblique;
+}
 
+/* experiencia laboral */
 
-  .experiencia h2{
-    position: absolute;
-    color: white;
-    display: flex;
-    margin-bottom: 4rem;
-    right: 25rem;
-    top: 55rem;
-  }
+.experiencia h2 {
+  position: absolute;
+  color: white;
+  display: flex;
+  margin-bottom: 4rem;
+  right: 25rem;
+  top: 55rem;
+}
 
-  .experiencia p{
-    position: absolute;
-    color: white;
-    border: solid 1px;
-    width: 20rem;
-    height: 20rem;
-  }
+.experiencia p {
+  position: absolute;
+  color: white;
+  border: solid 1px;
+  width: 20rem;
+  height: 20rem;
+}
 
-  .primero{
-    position: relative;
-    left: 18rem;
-    top: 19rem;
-  }
+.primero {
+  position: relative;
+  left: 18rem;
+  top: 19rem;
+}
 
-  .segundo{
-    position: relative;
-    left: 41rem;
-    top: 16.6rem;
-  }
+.segundo {
+  position: relative;
+  left: 41rem;
+  top: 16.6rem;
+}
 
-  .tercero{
-    position: relative;
-    left: 64rem;
-    top: 14.4rem;
-  }
+.tercero {
+  position: relative;
+  left: 64rem;
+  top: 14.4rem;
+}
 
-  /* barra de progreso */
+/* barra de progreso */
 
-
-.progress{
+.progress {
   position: relative;
   width: 40rem;
   height: 4rem;
@@ -201,135 +206,133 @@ body{
   margin: 3rem;
 }
 
-.progress-bar{
+.progress-bar {
   color: #ffffff;
   background-color: #000;
 }
-  
-  .aprendizaje{
-    position: absolute;
-    left: 20rem;
-    top: 100rem;  
-    z-index: 390;  
-  }
-  
-  .aprendizaje h3{
-    font-size: 3rem;
-    position: inherit;
-    color: rgb(255, 255, 255);
-    left: 20rem;
-    bottom: 97rem;
-  }
 
-  /* logos de progreso */
+.aprendizaje {
+  position: absolute;
+  left: 20rem;
+  top: 100rem;
+  z-index: 390;
+}
 
-  .html5{
-    position: relative;
-    font-size: 5rem;
-    color: white;
-    left: 15rem;
-    bottom: 48.8rem;
-  }
+.aprendizaje h3 {
+  font-size: 3rem;
+  position: inherit;
+  color: rgb(255, 255, 255);
+  left: 20rem;
+  bottom: 97rem;
+}
 
-  .css3{
-    position: relative;
-    font-size: 5rem;
-    color: white;
-    left: 15rem;
-    bottom: 49.2rem;
-  }
+/* logos de progreso */
 
-  .js{
-    position: relative;
-    font-size: 5rem;
-    color: white;
-    left: 15rem;
-    bottom: 50rem;
-  }
+.html5 {
+  position: relative;
+  font-size: 5rem;
+  color: white;
+  left: 15rem;
+  bottom: 48.8rem;
+}
 
-  .bootstrap{
-    position: relative;
-    font-size: 5rem;
-    color: white;
-    left: 15rem;
-    bottom: 50.5rem;
-  }
+.css3 {
+  position: relative;
+  font-size: 5rem;
+  color: white;
+  left: 15rem;
+  bottom: 49.2rem;
+}
 
-  .database{
-    position: relative;
-    font-size: 5rem;
-    color: white;
-    left: 15rem;
-    bottom: 51rem;
-  }
+.js {
+  position: relative;
+  font-size: 5rem;
+  color: white;
+  left: 15rem;
+  bottom: 50rem;
+}
 
-  .java{
-    position: relative;
-    font-size: 5rem;
-    color: white;
-    left: 15rem;
-    bottom: 51.5rem;
-  }
+.bootstrap {
+  position: relative;
+  font-size: 5rem;
+  color: white;
+  left: 15rem;
+  bottom: 50.5rem;
+}
 
-  /* contacto */
+.database {
+  position: relative;
+  font-size: 5rem;
+  color: white;
+  left: 15rem;
+  bottom: 51rem;
+}
 
-  .contacto{
-    position: absolute;
-    left: 25rem;
-    top: 10rem;
-    left: 30rem;
-    width: 30rem;
-  }
+.java {
+  position: relative;
+  font-size: 5rem;
+  color: white;
+  left: 15rem;
+  bottom: 51.5rem;
+}
 
-  .form-label{
-    color: white;
-    font-size: 2rem;
-  }
+/* contacto */
 
-  .form-control{
-    color: #ffffff;
-    background-color: #000;
-    transition: 0.5s;
-  }
-  
-  /* hover */
-  
-.form-control:hover{
+.contacto {
+  position: absolute;
+  left: 25rem;
+  top: 10rem;
+  left: 30rem;
+  width: 30rem;
+}
+
+.form-label {
+  color: white;
+  font-size: 2rem;
+}
+
+.form-control {
+  color: #ffffff;
+  background-color: #000;
+  transition: 0.5s;
+}
+
+/* hover */
+
+.form-control:hover {
   background-color: black;
   color: #ffffff;
 }
 
-.nav-lateral :hover{
+.nav-lateral :hover {
   background-color: #0d6efd;
-  color: white;  
+  color: white;
 }
-.nav-lateral a:hover{
-  transition: 0,5s;
-  
+.nav-lateral a:hover {
+  transition: 0, 5s;
 }
 
-.form-control{
+.form-control {
   position: absolute;
   width: 21rem;
   top: 7rem;
   background-color: #0d6efd;
 }
 
+.facebook:hover {
+  color: #0d6efd;
+}
+.instagram:hover {
+  color: #0d6efd;
+}
+.linkedin:hover {
+  color: #0d6efd;
+}
+.login:hover {
+  color: #0d6efd;
+}
 
-.facebook:hover{
-  color: #0d6efd;
-}
-.instagram:hover{
-  color: #0d6efd;
-}
-.linkedin:hover{
-  color: #0d6efd;
-}
-.login:hover{
-  color: #0d6efd;
-}
-
-.footer{
+.footer {
   background-color: #000;
   color: #ffffff;
   position: relative;
@@ -337,42 +340,41 @@ body{
 
 /* boton de modal */
 
-.experiencia button{
+.experiencia button {
   position: relative;
   left: 60rem;
   top: 15rem;
 }
 
-.collapse button{
+.collapse button {
   position: relative;
   top: 9rem;
   right: 7rem;
 }
 
-
-.btn{
+.btn {
   color: #ffffff;
   background-color: #000;
   border: #ffffff;
 }
 
-.primero button{
-  position: relative; 
+.primero button {
+  position: relative;
   left: 10rem;
   top: 22rem;
 }
-.segundo button{
-  position: relative; 
+.segundo button {
+  position: relative;
   left: 10rem;
   top: 22rem;
 }
-.tercero button{
-  position: relative; 
+.tercero button {
+  position: relative;
   left: 10rem;
   top: 22rem;
 }
 
-.progress-bar button{
+.progress-bar button {
   position: absolute;
   right: 0;
   z-index: 250;
