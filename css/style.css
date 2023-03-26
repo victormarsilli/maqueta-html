@@ -9,51 +9,59 @@ body{
 }
 
 
-header{
+.container-fluid {
   position: fixed;
   background-color: rgb(5, 5, 5);
   width: 100%;
-  height: 13%;
-  z-index: 300;
+  height: 23%;
+  z-index: 900;
+  flex: none;
 }
 
-#navbarSupporteContent{
+#navbarSupporteContent {
   left: 55rem;
   font-size: 3rem;
   font-style: white;
 }
+
 /* barra iconos */
-.arg, .facebook, .instagram, .linkedin, .login{
+.arg,
+.facebook,
+.instagram,
+.linkedin,
+.login {
   height: 1rem;
   width: 2rem;
-  position: relative;
+  position: absolute;
   color: white;
   font-size: 3rem;
   bottom: 1rem;
   transition: 0.5s;
+  z-index: 999;
 }
 
-.arg{
-  padding-bottom: 0;
+.arg {
+  bottom: 4.5rem;
 }
 
-.facebook{
+.facebook {
+  bottom: 3rem;
   left: 40rem;
 }
-.instagram{  
+.instagram {
+  bottom: 3rem;
   left: 50rem;
-  bottom: 6.5rem;
 }
 
-.linkedin{  
+.linkedin {
+  bottom: 3rem;
   left: 60rem;
-  bottom: 12rem;
 }
 
-.login{ 
+.login {
+  bottom: 2.5rem;
   left: 75rem;
   font-size: 2rem;
-  bottom: 17.5rem;
 }
 
 /* navegacion lateral */
