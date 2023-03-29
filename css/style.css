@@ -1,13 +1,16 @@
 /* barra logo */
-html{
+
+* {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+html {
   overflow-x: hidden;
 }
 
-
-body{
-  background-color: #049dff;
+body {
+  background-color: #0d6efd;
 }
-
 
 .container-fluid {
   position: fixed;
@@ -65,28 +68,43 @@ body{
 }
 
 /* navegacion lateral */
-.nav-lateral{
+.nav-lateral {
   position: fixed;
   list-style: none;
   z-index: 310;
   top: 7rem;
   transition: 0.5s;
 }
-.nav-lateral a{
+.nav-lateral a {
   color: white;
   text-decoration: none;
-  font-size: 1rem;  
+  font-size: 1rem;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.acer{
+.acer {
   padding: 1rem;
   border: solid 1px white;
   border-radius: 20%;
   width: 6rem;
   background-color: rgb(5, 5, 5);
 }
-.con{
+
+.inicio{
+  padding: 0.7rem;
+  border: solid 1px white;
+  border-radius: 20%;
+  width: 4rem;
+  height: 4rem;
+  background-color: rgb(5, 5, 5);
+  color: white;
+}
+
+.inicio i{
+  font-size: 2rem;
+}
+
+.con {
   padding: 1rem;
   border: solid 1px white;
   border-radius: 20%;
@@ -100,7 +118,14 @@ body{
   width: 10rem;
   background-color: rgb(5, 5, 5);
 }
-.exp{
+.proy{
+  padding: 1rem;
+  border: solid 1px white;
+  border-radius: 20%;
+  width: 12rem;
+  background-color: rgb(5, 5, 5);
+}
+.exp {
   padding: 1rem;
   border: solid 1px white;
   border-radius: 20%;
@@ -110,71 +135,92 @@ body{
 
 /* fondo */
 
-.div-fondo{
-  /* bottom: 16rem; */
-  width: 80%;
+.div-fondo {
   height: 40rem;
-  left: 20%;
-  
+  left: 18%;
 }
-.d-block w100{
-  height:100%;
+.d-block w100 {
   width: 40%;
   z-index: 90;
 }
 
 /* foto usuario */
-.card{
-    position:absolute;
-    height:100%;
-    width:40%;
-    top: 4rem;
-    margin: 80px;
-    z-index: 95;
-    border: transparent;
-    background-color: transparent;
-  }
+.card {
+  position: absolute;
+  width: 40%;
+  top: 4rem;
+  margin: 80px;
+  border: transparent;
+  background-color: transparent;
+}
 
-  .carrousel-item active{
-    position: relative;
-  }
+.carrousel-item active {
+  position: relative;
+}
 
-  .card-img-top{
-    border-radius: 100%;
-    display: flex;
-    width: 15rem;
-    height: 15rem;
-  }
+.card-img-top {
+  border-radius: 100%;
+  width: 15rem;
+  height: 15rem;
+}
+
 /* acerca de mi */
-  .card p, h2{
-    color: white;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-  }
 
-  /* experiencia laboral */
-  .experiencia h2{
-    position: absolute;
-    color: white;
-    display: flex;
-    margin-bottom: 4rem;
-    right: 25rem;
-    top: 55rem;
-    z-index: 150;
-  }
-  .experiencia p{
-    position: relative;
-    color: white;
-    width: 20rem;
-    height: 20rem;
-    display: inline-block;
-    top: 20rem;
-    left: 20rem;
-  }
+.card p,
+h1,
+h2 {
+  color: white;
+}
 
-  /* barra de progreso */
+.card h1 {
+  position: relative;
+  left: 20rem;
+  bottom: 18rem;
+  font-size: 3rem;
+  font-style: oblique;
+}
 
+/* experiencia laboral */
 
-.progress{
+.experiencia h2 {
+  position: absolute;
+  color: white;
+  display: flex;
+  margin-bottom: 4rem;
+  right: 25rem;
+  top: 53rem;
+}
+
+.experiencia p {
+  position: absolute;
+  color: white;
+  border: solid 5px;
+  width: 20rem;
+  height: 20rem;
+  padding: 1rem;
+}
+
+.primero {
+  position: relative;
+  left: 18rem;
+  top: 19rem;
+}
+
+.segundo {
+  position: relative;
+  left: 40rem;
+  top: 19rem;
+}
+
+.tercero {
+  position: relative;
+  left: 62rem;
+  top: 19rem;
+}
+
+/* barra de progreso */
+
+.progress {
   position: relative;
   width: 40rem;
   height: 4rem;
@@ -183,134 +229,175 @@ body{
   margin: 3rem;
 }
 
-.progress-bar{
+.progress-bar {
   color: #ffffff;
   background-color: #000;
 }
-  
-  .aprendizaje{
-    position: absolute;
-    left: 20rem;
-    top: 100rem;    
-  }
-  
-  .aprendizaje h3{
-    font-size: 3rem;
-    position: inherit;
-    color: rgb(255, 255, 255);
-    left: 20rem;
-    bottom: 97rem;
-  }
 
-  /* logos de progreso */
+.aprendizaje {
+  position: absolute;
+  left: 15rem;
+  top: 100rem;
+}
 
-  .html5{
-    position: relative;
-    font-size: 5rem;
-    color: white;
-    left: 15rem;
-    bottom: 48.8rem;
-  }
+.aprendizaje h3 {
+  font-size: 3rem;
+  position: inherit;
+  color: rgb(255, 255, 255);
+  left: 23rem;
+  bottom: 97rem;
+}
 
-  .css3{
-    position: relative;
-    font-size: 5rem;
-    color: white;
-    left: 15rem;
-    bottom: 49.2rem;
-  }
+/* logos de progreso */
 
-  .js{
-    position: relative;
-    font-size: 5rem;
-    color: white;
-    left: 15rem;
-    bottom: 50rem;
-  }
+.html5 {
+  position: relative;
+  font-size: 5rem;
+  color: white;
+  left: 15rem;
+  bottom: 48.8rem;
+}
 
-  .bootstrap{
-    position: relative;
-    font-size: 5rem;
-    color: white;
-    left: 15rem;
-    bottom: 50.5rem;
-  }
+.css3 {
+  position: relative;
+  font-size: 5rem;
+  color: white;
+  left: 15rem;
+  bottom: 49.2rem;
+}
 
-  .database{
-    position: relative;
-    font-size: 5rem;
-    color: white;
-    left: 15rem;
-    bottom: 51rem;
-  }
+.js {
+  position: relative;
+  font-size: 5rem;
+  color: white;
+  left: 15rem;
+  bottom: 50rem;
+}
 
-  .java{
-    position: relative;
-    font-size: 5rem;
-    color: white;
-    left: 15rem;
-    bottom: 51.5rem;
-  }
+.bootstrap {
+  position: relative;
+  font-size: 5rem;
+  color: white;
+  left: 15rem;
+  bottom: 50.5rem;
+}
 
-  /* contacto */
+.database {
+  position: relative;
+  font-size: 5rem;
+  color: white;
+  left: 15rem;
+  bottom: 51rem;
+}
 
-  .contacto{
-    position: absolute;
-    left: 25rem;
-    z-index: 200;
-    top: 10rem;
-    left: 30rem;
-    width: 30rem;
-  }
+.java {
+  position: relative;
+  font-size: 5rem;
+  color: white;
+  left: 15rem;
+  bottom: 51.5rem;
+}
 
-  .form-label{
-    color: white;
-    font-size: 2rem;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-  }
 
-  .form-control{
-    color: #ffffff;
-    background-color: #000;
-    transition: 0.5s;
-  }
+/* proyectos */
 
-  
-.form-control:hover{
-  background-color: black;
+#proyectos{
+  position: relative;
+  bottom: 6rem;
+  left: 15rem;
+  font-size: 3rem;
+}
+
+.proyectos{
+  position: absolute;
+  width: 50rem;
+  height: 25rem;
+  border: solid 5px white;
+  left: 13rem;
+  bottom: 10rem;
+}
+
+.titulo-proyecto{
+  position: relative;
+  bottom: 4rem;
+  left: 14rem;
+}
+.proyecto-1{
+  padding-left: 2rem;
+  padding-top: 1rem;
+}
+
+.frontend{
   color: #ffffff;
 }
 
-.nav-lateral :hover{
-  background-color: #049dff;
-  color: white;  
+.backend{
+  position: absolute;
+  right: 0;
+  right: 2rem;
+  top: 8rem;
+  color: #ffffff;
 }
-.nav-lateral a:hover{
-  transition: 0,5s;
-  
+
+.btn-front, .btn-back{
+  position: relative;
+  top: 1rem;
 }
+
+.git-front{
+  position: absolute;
+  color: #000000;
+  left: 3rem;
+  bottom: 1rem;
+}
+.git-back{
+  position: absolute;
+  color: #000000;
+  left: 31rem;
+  bottom: 1.2rem;
+}
+.fa-square-github{
+  color: #000;
+  font-size: 1.5rem;
+}
+
 
 /* hover */
 
-.facebook:hover{
-  color: #049dff;
-  font-size: 3.5rem;
+
+.nav-lateral :hover {
+  background-color: #0d6efd;
+  color: white;
 }
-.instagram:hover{
-  color: #049dff;
-  font-size: 3.5rem;
-}
-.linkedin:hover{
-  color: #049dff;
-  font-size: 3.5rem;
-}
-.login:hover{
-  color: #049dff;
-  font-size: 3.5rem;
+.nav-lateral a:hover {
+  transition: 0, 5s;
 }
 
-.footer{
-  background-color: #000;
+
+.facebook:hover {
+  color: #0d6efd;
+}
+.instagram:hover {
+  color: #0d6efd;
+}
+.linkedin:hover {
+  color: #0d6efd;
+}
+.login:hover {
+  color: #0d6efd;
+}
+
+
+
+.btn {
   color: #ffffff;
-  position: relative;
+  background-color: #000;
+  border: #ffffff;
+}
+
+
+.footer{
+  position: absolute;
+  width: 100%;
+  bottom: 0;
 }
