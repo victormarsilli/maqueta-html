@@ -133,6 +133,31 @@ body {
   background-color: rgb(5, 5, 5);
 }
 
+/* hover barra lateral*/
+
+
+.nav-lateral :hover {
+  background-color: #0d6efd;
+  color: white;
+}
+.nav-lateral a:hover {
+  transition: 0, 5s;
+}
+
+
+.facebook:hover {
+  color: #0d6efd;
+}
+.instagram:hover {
+  color: #0d6efd;
+}
+.linkedin:hover {
+  color: #0d6efd;
+}
+.login:hover {
+  color: #0d6efd;
+}
+
 /* fondo */
 
 .div-fondo {
@@ -164,6 +189,19 @@ body {
   height: 15rem;
 }
 
+.btn-usuario{
+  position: relative;
+  width: 3rem;
+  left: 6rem;
+  bottom: 15rem;
+}
+
+.btn-nombre2{
+  position: relative;
+  left: 24rem;
+  bottom: 3.6rem;
+}
+
 /* acerca de mi */
 
 .card p,
@@ -180,12 +218,22 @@ h2 {
   font-style: oblique;
 }
 
+.btn-acercaDeMi1{
+  position: relative;
+  left: 3rem;
+  bottom: 9rem;
+}
+.btn-acercaDeMi2{
+  position: relative;
+  left: 28rem;
+  bottom: 11.3rem;
+}
+
 /* experiencia laboral */
 
 .experiencia h2 {
   position: absolute;
   color: white;
-  display: flex;
   margin-bottom: 4rem;
   right: 25rem;
   top: 53rem;
@@ -203,19 +251,25 @@ h2 {
 .primero {
   position: relative;
   left: 18rem;
-  top: 19rem;
+  top: 20rem;
 }
 
 .segundo {
   position: relative;
   left: 40rem;
-  top: 19rem;
+  top: 17.7rem;
 }
 
 .tercero {
   position: relative;
   left: 62rem;
-  top: 19rem;
+  top: 15.4rem;
+}
+
+.btn-p{
+  position: relative;
+  left: 7rem;
+  bottom: 3rem;
 }
 
 /* barra de progreso */
@@ -339,10 +393,6 @@ h2 {
   color: #ffffff;
 }
 
-.btn-front, .btn-back{
-  position: relative;
-  top: 1rem;
-}
 
 .git-front{
   position: absolute;
@@ -361,33 +411,13 @@ h2 {
   font-size: 1.5rem;
 }
 
-
-/* hover */
-
-
-.nav-lateral :hover {
-  background-color: #0d6efd;
-  color: white;
-}
-.nav-lateral a:hover {
-  transition: 0, 5s;
+.btn-proyectos{
+  position: relative;
+  left: 40rem;
+  bottom: 15rem;
 }
 
-
-.facebook:hover {
-  color: #0d6efd;
-}
-.instagram:hover {
-  color: #0d6efd;
-}
-.linkedin:hover {
-  color: #0d6efd;
-}
-.login:hover {
-  color: #0d6efd;
-}
-
-
+/*estilo boton*/
 
 .btn {
   color: #ffffff;
@@ -395,6 +425,7 @@ h2 {
   border: #ffffff;
 }
 
+/* footer */
 
 .footer{
   position: absolute;
